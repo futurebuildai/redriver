@@ -354,7 +354,7 @@
     --app-surface-contrast-bg: #1d231c;
     --app-control-bg: #2b332a;
     --app-header-bg: #1d231c;
-    --app-logo-filter: invert(1);
+    --app-logo-filter: none;
     --app-logo-text-color: var(--color-text);
     --app-header-link-hover: var(--color-accent-light);
     --app-header-utility-bg: rgba(50, 50, 58, 0.7);
