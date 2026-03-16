@@ -39,11 +39,12 @@ export class PvPageTourModal extends PvBase {
       }
 
       .modal-card {
-        background: #ffffff;
+        background: var(--app-surface-bg, #ffffff);
+        border: 1px solid var(--color-border);
         border-radius: 12px;
         width: 100%;
         max-width: 600px;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: var(--shadow-xl);
         padding: 32px;
         position: relative;
         animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -64,7 +65,7 @@ export class PvPageTourModal extends PvBase {
       }
 
       .tour-badge {
-        background: var(--color-primary-light, #ea580c);
+        background: var(--color-primary-light, #2b332a);
         color: white;
         font-size: 11px;
         font-weight: 700;
@@ -117,19 +118,19 @@ export class PvPageTourModal extends PvBase {
 
       .dismiss-btn {
         width: 100%;
-        background: var(--color-primary, #ea580c);
-        color: var(--color-on-primary, white);
+        background: var(--color-accent, #C05D2D);
+        color: white;
         border: none;
         padding: 14px 24px;
         font-size: 16px;
         font-weight: 600;
         border-radius: 8px;
         cursor: pointer;
-        transition: background 0.2s ease;
+        transition: all 0.2s ease;
       }
 
       .dismiss-btn:hover {
-        background: var(--color-primary-hover, #c2410c);
+        background: var(--color-cta-hover, #A64F26);
       }
     `
   ];
