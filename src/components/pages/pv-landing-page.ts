@@ -17,8 +17,8 @@ export class PvLandingPage extends PvBase {
         flex-direction: column;
         min-height: 100vh;
         width: 100%;
-        background-color: #f1f5f9;
-        color: #1e293b;
+        background: linear-gradient(135deg, #1d231c 0%, #121612 100%);
+        color: #ffffff;
         font-family: 'Inter', sans-serif;
         box-sizing: border-box;
       }
@@ -29,7 +29,7 @@ export class PvLandingPage extends PvBase {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #6a011f 0%, #4a0115 100%);
+        background: var(--app-login-bg, linear-gradient(135deg, #1d231c 0%, #121612 100%));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,7 +62,7 @@ export class PvLandingPage extends PvBase {
 
       .password-card h2 {
         font-family: 'Space Grotesk', sans-serif;
-        color: #6a011f;
+        color: #1d231c;
         margin-bottom: 1rem;
         font-size: 24px;
       }
@@ -94,7 +94,7 @@ export class PvLandingPage extends PvBase {
 
       .btn-auth {
         width: 100%;
-        background: #076437;
+        background: #cc0000;
         color: white;
         padding: 1rem;
         border-radius: 12px;
@@ -106,7 +106,7 @@ export class PvLandingPage extends PvBase {
       }
 
       .btn-auth:hover {
-        background: #054d2a;
+        background: #990000;
         transform: translateY(-2px);
       }
 
@@ -155,7 +155,7 @@ export class PvLandingPage extends PvBase {
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 0.1em;
-        color: var(--color-accent);
+        color: #ffffff;
         margin-bottom: var(--space-3xl);
         text-transform: uppercase;
       }
@@ -214,7 +214,7 @@ export class PvLandingPage extends PvBase {
 
       .footer {
         font-size: 12px;
-        color: #4b5563;
+        color: #94a3b8;
         margin-top: var(--space-2xl);
       }
 
@@ -242,7 +242,7 @@ export class PvLandingPage extends PvBase {
 
   connectedCallback() {
     super.connectedCallback();
-    const auth = localStorage.getItem('martins_auth');
+    const auth = localStorage.getItem('redriver_auth');
     if (auth === 'true') {
       this.isAuthorized = true;
     }
@@ -256,7 +256,7 @@ export class PvLandingPage extends PvBase {
   private checkPassword() {
     if (this.passwordInput === 'HowMartinsWins2026') {
       this.isAuthorized = true;
-      localStorage.setItem('martins_auth', 'true');
+      localStorage.setItem('redriver_auth', 'true');
     } else {
       this.authError = 'Incorrect password. Please try again.';
       this.passwordInput = '';
@@ -284,9 +284,9 @@ export class PvLandingPage extends PvBase {
       return html`
         <div class="password-overlay">
           <div class="password-card">
-            <img src="/assets/martins-logo.png" alt="Logo" class="password-logo" />
+            <img src="/assets/redriver-logo.png" alt="Logo" class="password-logo" />
             <h2>Restricted Access</h2>
-            <p>Please enter the authorization password to view the Martin's Native Lumber portals.</p>
+            <p>Please enter the authorization password to view the Red River Lumber portals.</p>
             <div class="input-group">
               <input 
                 type="password" 
@@ -310,10 +310,10 @@ export class PvLandingPage extends PvBase {
     return html`
       <div class="landing-container">
         <div class="logo-container">
-          <img src="/assets/martins-logo.png" alt="Martin's Native Lumber Logo" class="rycenga-logo" />
+          <img src="/assets/redriver-logo.png" alt="Red River Lumber Logo" class="rycenga-logo" />
         </div>
 
-        <h1 class="title">Martin's Native Lumber</h1>
+        <h1 class="title">Red River Lumber</h1>
 
         <div class="portal-cards">
           <div class="portal-card" @click=${this.navigateToPortal}>

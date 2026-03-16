@@ -6,22 +6,16 @@
 /* CSS Custom Properties (Design Tokens) */
 :root {
   /* Colors - Martin's Native Lumber (Maroon & Forest Green) */
-  --color-primary: #6a011f;
-  /* Maroon (Base) */
-  --color-primary-dark: #4a0115;
-  /* Deep Maroon */
-  --color-primary-light: #8a0129;
-  /* Lighter Maroon */
-  --color-accent: #076437;
-  /* Forest Green */
-  --color-accent-light: #098046;
-  /* Light Green */
-  --color-accent-dark: #054d2a;
-  /* Dark Green */
-  --color-cta: #6a011f;
-  /* Maroon */
-  --color-cta-hover: #4a0115;
-  /* Dark Maroon */
+  --color-primary: #1d231c;
+  --color-primary-dark: #121612;
+  --color-primary-light: #2b332a;
+  --color-accent: #cc0000;
+  --color-accent-light: #ff3333;
+  --color-accent-dark: #990000;
+  --color-cta: #cc0000;
+  --color-cta-hover: #b30000;
+  --status-accent-bg: #ffebeb;
+  --status-accent-text: #cc0000;
   --color-text: #0f172a;
   /* Deep Black */
   --color-text-light: #475569;

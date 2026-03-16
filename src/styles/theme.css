@@ -5,14 +5,14 @@
 
 :root {
     /* Colors - Martin's Native Lumber (Maroon & Forest Green) */
-    --color-primary: #6a011f;
-    --color-primary-dark: #4a0115;
-    --color-primary-light: #8a0129;
-    --color-accent: #076437;
-    --color-accent-light: #098046;
-    --color-accent-dark: #054d2a;
-    --color-cta: #6a011f;
-    --color-cta-hover: #4a0115;
+    --color-primary: #1d231c;
+    --color-primary-dark: #121612;
+    --color-primary-light: #2b332a;
+    --color-accent: #cc0000;
+    --color-accent-light: #ff3333;
+    --color-accent-dark: #990000;
+    --color-cta: #cc0000;
+    --color-cta-hover: #b30000;
     --color-text: #0f172a;
     --color-text-light: #475569;
     --color-text-muted: #94a3b8;
@@ -37,8 +37,8 @@
     --status-error-text: #ef4444;
     --status-neutral-bg: rgba(71, 85, 105, 0.1);
     --status-neutral-text: #475569;
-    --status-accent-bg: rgba(7, 100, 55, 0.1);
-    --status-accent-text: #076437;
+    --status-accent-bg: #ffebeb;
+    --status-accent-text: #cc0000;
     --status-purple-bg: rgba(168, 85, 247, 0.1);
     --status-purple-text: #a855f7;
 
@@ -166,7 +166,7 @@
     --app-inverse-text: #ffffff;
 
     /* Login */
-    --app-login-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    --app-login-bg: linear-gradient(135deg, #1d231c 0%, #121612 100%);
     --app-login-container-max-width: 420px;
     --app-login-card-bg: #ffffff;
     --app-login-card-padding: var(--space-2xl);
@@ -332,9 +332,9 @@
     --color-text: #e4e4e7;
     --color-text-light: #d4d4d8;
     --color-text-muted: #a1a1aa;
-    --color-bg: #111113;
-    --color-bg-alt: #202024;
-    --color-border: #32323a;
+    --color-bg: #1d231c;
+    --color-bg-alt: #121612;
+    --color-border: #2b332a;
 
     --status-success-bg: rgba(34, 197, 94, 0.2);
     --status-info-bg: rgba(59, 130, 246, 0.2);
@@ -348,12 +348,12 @@
     --glass-bg-dark: rgba(17, 17, 19, 0.94);
     --glass-border: rgba(161, 161, 170, 0.2);
 
-    --app-layout-background: #111113;
-    --app-main-bg: #111113;
-    --app-surface-bg: #202024;
-    --app-surface-contrast-bg: #2a2a31;
-    --app-control-bg: #46464f;
-    --app-header-bg: #111113;
+    --app-layout-background: #1d231c;
+    --app-main-bg: #1d231c;
+    --app-surface-bg: #121612;
+    --app-surface-contrast-bg: #1d231c;
+    --app-control-bg: #2b332a;
+    --app-header-bg: #1d231c;
     --app-logo-filter: invert(1);
     --app-logo-text-color: var(--color-text);
     --app-header-link-hover: var(--color-accent-light);
@@ -362,11 +362,11 @@
     --app-header-utility-link-bg: transparent;
     --app-header-utility-link-active-bg: transparent;
     --app-header-utility-link-active-color: var(--color-text);
-    --app-sidebar-bg: #111113;
+    --app-sidebar-bg: #1d231c;
     --app-sidebar-nav-hover-bg: #32323a;
     --app-sidebar-nav-active-bg: #32323a;
     --app-sidebar-border-right: 1px solid #32323a;
-    --app-login-card-bg: #202024;
+    --app-login-card-bg: #121612;
     --app-billing-tab-active-color: var(--color-accent-light);
     --app-billing-tab-active-border: var(--color-accent-light);
     --app-btn-outline-color: #d4d4d8;
@@ -385,11 +385,11 @@
     --app-danger-strong-text: #fecaca;
     --app-muted-strong-color: #d4d4d8;
 
-    --admin-bg: #111113;
-    --admin-card-bg: #202024;
-    --admin-sidebar-bg: #111113;
-    --admin-sidebar-hover: #202024;
-    --admin-sidebar-text: #a1a1aa;
+    --admin-bg: #121612;
+    --admin-card-bg: #1d231c;
+    --admin-sidebar-bg: #1d231c;
+    --admin-sidebar-hover: #121612;
+    --admin-sidebar-text: #94a3b8;
     --admin-sidebar-text-active: #ffffff;
     --admin-signout-bg: rgba(63, 63, 70, 0.55);
     --admin-signout-border: rgba(113, 113, 122, 0.9);

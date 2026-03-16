@@ -21,13 +21,14 @@ interface BrandingCacheEnvelope {
 export const BRANDING_REFRESH_SIGNAL_KEY = 'branding_refresh_signal_v1';
 
 const DEFAULT_BRANDING = {
-    companyName: "Martin's Native Lumber",
+    companyName: 'Red River Lumber',
     templateId: 1,
     paletteId: 1,
     logoBase64: null,
     logoType: null,
-    contactEmail: 'akraus@martinslumber.com',
-    contactPhone: '(540) 879-2518',
+    contactEmail: 'achavez@redriverlumber.com',
+    contactPhone: '(903) 793-0038',
+    logoUrl: '/assets/redriver-logo.png',
 };
 
 class BrandingServiceImpl {
@@ -167,7 +168,7 @@ class BrandingServiceImpl {
             logoType: logoType ?? DEFAULT_BRANDING.logoType,
             contactEmail: contactEmail ?? DEFAULT_BRANDING.contactEmail,
             contactPhone: contactPhone ?? DEFAULT_BRANDING.contactPhone,
-            logoUrl: '/assets/martins-logo.png',
+            logoUrl: DEFAULT_BRANDING.logoUrl,
         };
 
         this.branding = branding;

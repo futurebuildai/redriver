@@ -220,7 +220,7 @@ export class PageLogin extends LitElement {
             <div class="login-container">
                 <div class="login-card">
                     <div class="login-header">
-                        <img src="/assets/martins-logo.png" class="login-logo-icon" alt="Martin's Native Lumber Logo" />
+                        <img src="/assets/redriver-logo.png" class="login-logo-icon" alt="Red River Lumber Logo" />
                         <span class="logo-name">${tenantName} Admin</span>
                         <span class="logo-tagline">Dealer Portal Access</span>
                     </div>

@@ -1,6 +1,6 @@
 export type ThemeMode = 'light' | 'dark';
 
-const THEME_STORAGE_KEY = 'velocity.theme.mode';
+const THEME_STORAGE_KEY = 'redriver.theme.mode';
 const THEME_ATTRIBUTE = 'data-theme';
 
 type ThemeListener = (theme: ThemeMode) => void;
@@ -48,9 +48,10 @@ export class ThemeService {
 
     private static getStoredTheme(): ThemeMode {
         try {
-            return localStorage.getItem(THEME_STORAGE_KEY) === 'dark' ? 'dark' : 'light';
+            const stored = localStorage.getItem(THEME_STORAGE_KEY);
+            return stored === 'light' ? 'light' : 'dark';
         } catch {
-            return 'light';
+            return 'dark';
         }
     }
 
