@@ -94,7 +94,7 @@ export class PvLandingPage extends PvBase {
 
       .btn-auth {
         width: 100%;
-        background: #cc0000;
+        background-color: var(--color-accent);
         color: white;
         padding: 1rem;
         border-radius: 12px;
@@ -106,8 +106,9 @@ export class PvLandingPage extends PvBase {
       }
 
       .btn-auth:hover {
-        background: #990000;
-        transform: translateY(-2px);
+        background-color: var(--color-cta-hover);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       .auth-error {
@@ -254,7 +255,7 @@ export class PvLandingPage extends PvBase {
   }
 
   private checkPassword() {
-    if (this.passwordInput === 'HowMartinsWins2026') {
+    if (this.passwordInput === 'HowRedRiverWins2026') {
       this.isAuthorized = true;
       localStorage.setItem('redriver_auth', 'true');
     } else {
